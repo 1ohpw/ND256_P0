@@ -1,0 +1,33 @@
+Task 0
+O(1)
+Accessing elements in the lists is done in constant time. The runtime will remain the same as the size of the input data grows.
+https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
+
+Task 1
+O(n)
+This will have O(n) runtime since I iterate through the entire dataset (both lists successively). 
+Runtime will grow linearly as the size of the input grows.
+Within each loop, only constant operations are done (adding to a set, and accessing elements in lists).
+Getting the length of the set also has constant time complexity.
+https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
+
+Task 2
+O(n)
+I iterate through the input successively, so the runtime will be linear. 
+Incrementing integers, accessing elements in lists/dictionaries, etc have constant time complexity, so these operations can be disregarded.
+The slice operation used to compare the date will always check the same string length, so it will not scale as n grows.
+https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
+
+Task 3
+O(n log n)
+Here I am not completely sure. My best guess is O(n log n) since that is the runtime of the sorted method. 
+The successive loops will have linear runtime. This can be disregarded since the O(n log n) is significantly greater for large n.
+Though string slice operations are used within the first loop, this can be disregarded too -
+since each slice operation will still take the same time as n grows.
+
+Task 4
+O(n log n)
+Again, the runtime will be linearithmic due to the sorted operation. 
+The linear complexity of the for-loops are insignificant in comparison when n grows large.
+The operations like variable assignment, adding to a set, checking if a set contains an element, etc have constant time complexity.
+https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
