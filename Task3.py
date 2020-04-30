@@ -50,7 +50,7 @@ for call in calls:
   if call[0][:5] == '(080)':
     total_bang_outgoing += 1
     if call[1][0] == '(':
-      if call[0][:5] == '(080)':
+      if call[1][:5] == '(080)':
         count_bang_to_bang += 1 
       end_parenthesis = call[1].index(')')
       codes_prefixes.add(call[1][:end_parenthesis + 1])
